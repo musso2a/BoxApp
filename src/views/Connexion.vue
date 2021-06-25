@@ -5,6 +5,7 @@
     </ion-toolbar>
   </ion-header>
   <ion-page>
+    <ion-content style="overflow: auto">
   <div class="call-to-action">
     <br>
     <br>
@@ -60,6 +61,7 @@
 
 <!--    <ion-card class="login-card"></ion-card>-->
   </div>
+    </ion-content>
   <ion-footer class="ion-no-border" id="footer">
     <ion-toolbar>
       <section class="button-bar">
@@ -124,6 +126,7 @@ export default defineComponent({
   background-size: cover;
   height: 100vh;
   background-color: #4a5568;
+  overflow: auto;
 }
 ion-card-title {
   color: black;
@@ -149,12 +152,14 @@ ion-input {
 .button-bar {
   display: flex;
   justify-content: space-evenly;
+  overflow-x: scroll;
 }
 .footer-btn {
   --border-radius: 0px;
 }
 #footer {
   border: #0d0d0d 1px solid;
+  /*overflow-x: scroll;*/
 }
 
 </style>

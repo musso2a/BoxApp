@@ -29,7 +29,8 @@
 
       <ion-footer class="ion-no-border" id="footer">
         <ion-toolbar>
-          <section class="button-bar">
+          <section class="button-bar" :scroll-x="true">
+
             <ion-button size="small" color="dark" class="footer-btn" href="/home">Home</ion-button>
             <ion-button size="small" color="dark" class="footer-btn" href="/produits">Produits</ion-button>
             <ion-button size="small" color="dark" class="footer-btn" href="/contact">Contact</ion-button>
@@ -103,7 +104,7 @@ export default defineComponent({
 .button-bar {
   display: flex;
   justify-content: space-evenly;
-
+  overflow-x: auto;
 }
 .footer-btn {
   --border-radius: 0px;
