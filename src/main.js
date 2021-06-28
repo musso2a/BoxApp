@@ -24,8 +24,12 @@ import '@ionic/vue/css/display.css';
 import './theme/variables.css';
 
 import './registerServiceWorker'
+import store from './store'
 
-const app = createApp(App)
+// axios.defaults.baseURL = 'http://localhost:8000'
+// axios.defaults.withCredentials = true;
+
+const app = createApp(App).use(store)
   .use(IonicVue)
   .use(router);
 
